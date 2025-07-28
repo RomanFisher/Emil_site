@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMIL | Certyfikaty</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* Основні стилі */
+  .page-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+    .container {
+      max-width: 90%; /* Збільшено ширину */
+      margin: 0 auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      text-align: center;
+    
+    }
+    /* Секція сертифікатів */
+    .about-detailed .block-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-detailed .block-row.reverse {
+      flex-direction: row-reverse;
+    }
+    .block-text {
+      flex: 1 1 300px;
+    }
+    .block-image {
+      flex: 1 1 300px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+    }
+    /* Слайдер */
+    .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 500px; /* Трохи менше для галереї */
+      margin: 0 auto 50px auto;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+    .slider img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: contain;
+      border-radius: 12px;
+      user-select: none;
+      pointer-events: none;
+    }
+    .slider-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .slider-nav button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .slider-nav button:hover {
+      background-color: #555;
+    }
+    /* Адаптивність */
+    @media (max-width: 700px) {
+      .about-detailed .block-row {
+        flex-direction: column;
+      }
+      .about-detailed .block-row.reverse {
+        flex-direction: column;
+      }
+      iframe {
+        height: 400px;
+      }
+    }
+    @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .page-content {
+    padding: 0 5%;
+  }
+
+  .block-row,
+  .block-row.reverse {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .slider-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .slider-nav button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .block-text,
+  .block-image {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+  <div class="page-content">
+    <div class="container" data-aos="fade-up">
+      <h1>Certyfikaty</h1>
+      <p>Poznaj dokumenty potwierdzające jakość naszych produktów.</p>
+    </div>
+
+    <!-- CERTIFICATE SECTION -->
+   
+      <section class="about-detailed">
+  <div class="container text-section">
+    <div class="block-row reverse" data-aos="fade-up" data-aos-delay="100">
+      <div class="block-text">
+        <h2>Deklaracja właściwości użytkowych</h2>
+        <p>Dokument potwierdzający zgodność z normami europejskimi dotyczący użytkowych właściwości naszych okien.</p>
+      </div>
+      <div class="block-image">
+        <iframe src="crt/Scan2023-10-13_163848 (1).pdf"></iframe>
+      </div>
+    </div>
+    
+    <div class="block-row" data-aos="fade-up">
+      <div class="block-text">
+        <h2>Specyfikacja okien</h2>
+        <p>Dokument techniczny przedstawiający szczegółowe informacje dotyczące parametrów naszych okien.</p>
+      </div>
+      <div class="block-image">
+        <iframe src="crt/specyfikacja okien.pdf"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- IMAGE SLIDER SECTION -->
+    <section class="about-detailed">
+      <div class="container text-section">
+        <h2 style="text-align: center;" data-aos="fade-up">Kolory</h2>
+        <div class="slider-wrapper" data-aos="fade-up" data-aos-delay="200">
+          <div class="slider" id="slider">
+            <img src="crt/System-76-AD-Standard_weiss.png" alt="System 76 AD Standard Weiss" />
+            <img src="crt/System-76-AD-Standard_nussbaum.png" alt="System 76 AD Standard Nussbaum" />
+            <img src="crt/System-76-AD-Falzverklebung-ohne-FLG-Stahl-weiss_2eb.png" alt="System 76 AD Falzverklebung" />
+            <img src="crt/System-88-MD-pCT-Full-Cover-Silver.jpg" alt="System 88 MD Full Cover Silver" />
+            <img src="crt/System-88-MD-Standard_weiss.png" alt="System 88 MD Standard Weiss" />
+          </div>
+          <div class="slider-nav">
+            <button onclick="prevSlide()">&larr;</button>
+            <button onclick="nextSlide()">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+  </main>
+
+ <!-- FOOTER -->
+<div id="site-footer"></div>
+  <!-- SCRIPTS -->
+   <script src="../js/common.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    // Динамічне підключення header і footer
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(res => {
+          if (!res.ok) throw new Error('Network error');
+          return res.text();
+        })
+        .then(data => document.getElementById(id).innerHTML = data)
+        .catch(err => console.warn(`Nie udało się załadować ${url}:`, err));
+    }
+
+    // Слайдер
+    const slider = document.getElementById('slider');
+    let index = 0;
+
+    function showSlide(i) {
+      const slides = slider.children.length;
+      index = (i + slides) % slides;
+      slider.style.transform = 'translateX(' + (-index * 100) + '%)';
+    }
+    function nextSlide() {
+      showSlide(index + 1);
+    }
+    function prevSlide() {
+      showSlide(index - 1);
+    }
+  </script>
+</body>
+</html>

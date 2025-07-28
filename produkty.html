@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produkty | EMIL</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <style>
+    .product-category {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-category.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .product-text {
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+
+    .product-slider {
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #004aad;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .see-more-btn:hover {
+      background-color: #00337a;
+    }
+
+    @media (max-width: 768px) {
+      .product-category, .product-category.reverse {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 480px) {
+  .product-category, .product-category.reverse {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .product-text, .product-slider {
+    max-width: 100%;
+    min-width: auto;
+    flex: none;
+    text-align: center;
+  }
+
+  .product-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .see-more-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .swiper-slide img {
+    border-radius: 8px;
+    box-shadow: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="site-header"></div>
+
+  <section id="dzwi" class="product-category fade-in">
+    <div class="product-slider">
+      <div class="swiper dzwi-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/produkty/drzwi/1.jpg" alt="Drzwi 1" /></div>
+        </div>
+        <div class="swiper-pagination dzwi-pagination"></div>
+      </div>
+    </div>
+    <div class="product-text">
+      <h2>Drzwi</h2>
+      <p>Oferujemy szeroki wybór drzwi wewnętrznych i zewnętrznych renomowanych producentów.</p>
+      <a href="drzwi.html" class="see-more-btn">Zobacz więcej</a>
+    </div>
+  </section>
+
+  <section id="okna" class="product-category reverse fade-in">
+    <div class="product-slider">
+      <div class="swiper okna-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/produkty/okna/1.jpg" alt="Okno 1" /></div>
+        </div>
+        <div class="swiper-pagination okna-pagination"></div>
+      </div>
+    </div>
+    <div class="product-text">
+      <h2>Okna</h2>
+      <p>Nasze okna gwarantują energooszczędność, bezpieczeństwo oraz elegancki wygląd.</p>
+      <a href="okna.html" class="see-more-btn">Zobacz więcej</a>
+    </div>
+  </section>
+
+  <section id="ogrody" class="product-category fade-in">
+    <div class="product-slider">
+      <div class="swiper ogrody-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/produkty/ogrody/4.jpg" alt="Ogród 1" /></div>
+        </div>
+        <div class="swiper-pagination ogrody-pagination"></div>
+      </div>
+    </div>
+    <div class="product-text">
+      <h2>Ogrody zimowe</h2>
+      <p>Realizujemy projekty ogrodów zimowych, które łączą naturę z komfortem wnętrza.</p>
+      <a href="ogrody-zimowe.html" class="see-more-btn">Zobacz więcej</a>
+    </div>
+  </section>
+
+  <section id="membrana" class="product-category reverse fade-in">
+    <div class="product-slider">
+      <div class="swiper membrana-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/produkty/epdm/2.jpg" alt="Membrana 1" /></div>
+        </div>
+        <div class="swiper-pagination membrana-pagination"></div>
+      </div>
+    </div>
+    <div class="product-text">
+      <h2>Membrana EPDM</h2>
+      <p>Specjalistyczna membrana EPDM do izolacji dachów, tarasów i fundamentów.</p>
+      <a href="membrana-epdm.html" class="see-more-btn">Zobacz więcej</a>
+    </div>
+  </section>
+
+  <section id="podlogi" class="product-category fade-in">
+    <div class="product-slider">
+      <div class="swiper podlogi-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/produkty/podlogi/2.jpg" alt="Podłoga 1" /></div>
+        </div>
+        <div class="swiper-pagination podlogi-pagination"></div>
+      </div>
+    </div>
+    <div class="product-text">
+      <h2>Podłogi</h2>
+      <p>Trwałe i stylowe podłogi do każdego wnętrza – laminowane, winylowe i drewniane.</p>
+      <a href="podlogi.html" class="see-more-btn">Zobacz więcej</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const categories = ['dzwi', 'okna', 'ogrody', 'membrana', 'podlogi'];
+
+    categories.forEach(cat => {
+      new Swiper(`.${cat}-swiper`, {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: `.${cat}-pagination`,
+          clickable: true,
+        }
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

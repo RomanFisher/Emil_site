@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMIL | Drzwi</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .drzwi-page {
+      background-color: #f9f9f9;
+    }
+
+    .drzwi-page .container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .block-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .block-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .block-text {
+      flex: 1;
+    }
+
+    .block-text h2 {
+      margin-top: 0;
+    }
+
+    .block-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .block-image {
+      flex: 1;
+      text-align: center;
+    }
+
+
+    .swiper-pagination {
+      margin-top: 10px;
+    }
+    .swiper {
+    width: 100%;
+    max-width: 500px; /* або 600px, як тобі зручно */
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Фото адаптуються автоматично, зберігаючи пропорції */
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+  }
+
+  main {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 768px) {
+    .block-row,
+    .block-row.reverse {
+      flex-direction: column;
+    }
+
+    .swiper {
+      max-width: 90%; /* адаптація на мобільних */
+    }
+  }
+  @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .block-text h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .block-text p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .block-image {
+    width: 100%;
+  }
+
+  .swiper {
+    max-width: 95%;
+  }
+
+  .container.intro-block p {
+    padding: 0 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .drzwi-page .container {
+    gap: 40px;
+  }
+
+  .block-row,
+  .block-row.reverse {
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="site-header"></div>
+
+<!-- HERO -->
+<main>
+  <div class="container intro-block" data-aos="fade-up">
+  <h1>Drzwi</h1>
+  <p style="text-align:center">Drzwi wewnętrzne, zewnętrzne i garażowe – funkcjonalność, estetyka i bezpieczeństwo w jednym miejscu.</p>
+  </div>
+
+  <!-- TREŚĆ -->
+  <section class="drzwi-page">
+    <div class="container">
+
+      <!-- Wewnętrzne -->
+      <div class="block-row" data-aos="fade-up">
+        <div class="block-text">
+          <h2>Drzwi wewnętrzne</h2>
+          <p>Nasze drzwi wewnętrzne to idealne rozwiązanie dla każdego wnętrza – nowoczesne, klasyczne lub minimalistyczne. Wysoka jakość wykonania, dźwiękochłonność oraz szeroki wybór wykończeń i kolorów.</p>
+        </div>
+        <div class="block-image">
+          <div class="swiper drzwi-wew-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/produkty/drzwi/wewnetrzne/1.jpg" alt="Drzwi wewnętrzne 1" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/wewnetrzne/2.jpg" alt="Drzwi wewnętrzne 2" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/wewnetrzne/3.jpg" alt="Drzwi wewnętrzne 3" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/wewnetrzne/4.jpg" alt="Drzwi wewnętrzne 4" /></div>
+            </div>
+            <div class="swiper-pagination drzwi-wew-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zewnętrzne -->
+      <div class="block-row reverse" data-aos="fade-up" data-aos-delay="100">
+        <div class="block-text">
+          <h2>Drzwi zewnętrzne</h2>
+          <p>Oferujemy trwałe i estetyczne drzwi zewnętrzne, które zapewniają doskonałą izolację termiczną i akustyczną. Dostępne są modele z dodatkowymi zabezpieczeniami antywłamaniowymi.</p>
+        </div>
+        <div class="block-image">
+          <div class="swiper drzwi-zew-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/produkty/drzwi/zewnetrzne/1.jpg" alt="Drzwi zewnętrzne 1" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/zewnetrzne/2.jpg" alt="Drzwi zewnętrzne 2" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/zewnetrzne/3.jpg" alt="Drzwi zewnętrzne 3" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/zewnetrzne/4.jpg" alt="Drzwi zewnętrzne 4" /></div>
+            </div>
+            <div class="swiper-pagination drzwi-zew-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garażowe -->
+      <div class="block-row" data-aos="fade-up" data-aos-delay="200">
+        <div class="block-text">
+          <h2>Drzwi garażowe</h2>
+          <p>Drzwi garażowe segmentowe, rolowane i uchylne – odporne na warunki atmosferyczne, z możliwością automatycznego sterowania. Idealne do domów prywatnych i obiektów przemysłowych.</p>
+        </div>
+        <div class="block-image">
+          <div class="swiper drzwi-garaz-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/produkty/drzwi/garazowe/1.jpg" alt="Drzwi garażowe 1" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/garazowe/2.jpg" alt="Drzwi garażowe 2" /></div>
+              <div class="swiper-slide"><img src="img/produkty/drzwi/garazowe/3.jpg" alt="Drzwi garażowe 3" /></div>
+            </div>
+            <div class="swiper-pagination drzwi-garaz-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<div id="site-footer"></div>
+
+<!-- SCRIPTS -->
+<script src="../js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+
+  new Swiper('.drzwi-wew-swiper', {
+    loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: '.drzwi-wew-pagination', clickable: true }
+  });
+
+  new Swiper('.drzwi-zew-swiper', {
+    loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: '.drzwi-zew-pagination', clickable: true }
+  });
+
+  new Swiper('.drzwi-garaz-swiper', {
+    loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: '.drzwi-garaz-pagination', clickable: true }
+  });
+</script>
+</body>
+</html>

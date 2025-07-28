@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EMIL | Ogrody zimowe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    main {
+      padding-bottom: 60px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .section-row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .section-row.reverse {
+      flex-direction: row-reverse;
+    }
+    .text-block {
+      flex: 1;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #333;
+    }
+    .text-block h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .swiper {
+      flex: 1;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: contain;
+    }
+    .swiper-pagination {
+      margin-top: 10px;
+    }
+    .fullwidth-gallery {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+    .fullwidth-gallery img {
+      flex: 1;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .image-placeholder {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+}
+    @media (max-width: 768px) {
+      .section-row, .section-row.reverse, .fullwidth-gallery {
+        flex-direction: column;
+      }
+      .swiper {
+        max-width: 100%;
+      }
+      .fullwidth-gallery img {
+        height: 200px;
+      }
+    }
+    @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .text-block {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .section-row {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .image-placeholder img,
+  .swiper-slide img {
+    border-radius: 12px;
+  }
+
+  .fullwidth-gallery {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .fullwidth-gallery img {
+    height: auto;
+    width: 100%;
+  }
+
+  .swiper {
+    max-width: 100%;
+  }
+
+  .swiper-pagination {
+    margin-top: 5px;
+  }
+}
+.desktop-only {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="site-header"></div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container" data-aos="fade-up">
+      <h1>Ogrody zimowe</h1>
+    </div>
+
+    <!-- Галерея для десктопу -->
+<div class="container fullwidth-gallery desktop-only" data-aos="fade-up">
+  <img src="img/produkty/ogrody/1.jpg" alt="Ogród 1" />
+  <img src="img/produkty/ogrody/2.jpg" alt="Ogród 2" />
+  <img src="img/produkty/ogrody/3.jpg" alt="Ogród 3" />
+</div>
+
+<!-- Swiper карусель для мобільних -->
+<div class="container mobile-only" data-aos="fade-up">
+  <div class="swiper mySwiperGallery">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/produkty/ogrody/1.jpg" alt="Ogród 1" /></div>
+      <div class="swiper-slide"><img src="img/produkty/ogrody/2.jpg" alt="Ogród 2" /></div>
+      <div class="swiper-slide"><img src="img/produkty/ogrody/3.jpg" alt="Ogród 3" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+    <section class="container">
+      <!-- Blok 1 -->
+      <div class="section-row" data-aos="fade-up">
+        <div class="text-block">
+          <h2>Czym jest ogród zimowy?</h2>
+          <p><strong>Ogród zimowy</strong> to przeszklona przestrzeń dobudowana do domu, która najczęściej pełni rolę <strong>dodatkowej przestrzeni mieszkalnej</strong>. To prosty i ekonomiczny sposób na <strong>zwiększenie powierzchni</strong> użytkowej. Coraz częściej pojawia się nie tylko przy luksusowych willach, ale również przy mniejszych domach.</p>
+        </div>
+        <div class="swiper ogrody-swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/produkty/ogrody/4.jpg" alt="Widok ogrodu 1"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/5.jpg" alt="Widok ogrodu 2"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/6.jpg" alt="Widok ogrodu 3"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/7.jpg" alt="Widok ogrodu 4"></div>
+          </div>
+          <div class="swiper-pagination ogrody-pagination-1"></div>
+        </div>
+      </div>
+
+      <!-- Blok 2 -->
+      <div class="section-row reverse" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-block">
+          <h2>Funkcjonalność i izolacja</h2>
+          <p>Ogród zimowy może być <strong>nieogrzewany</strong>, służący do przechowywania roślin zimą, lub <strong>ogrzewany całorocznie</strong> – jako salon czy jadalnia. Konstrukcje całoroczne wymagają <strong>izolowanych profili aluminiowych lub PVC</strong> i szyb zespolonych o współczynniku U ≤ 1,1 W/(m²·K).</p>
+        </div>
+        <div class="swiper ogrody-swiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/produkty/ogrody/8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/10.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/11.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination ogrody-pagination-2"></div>
+        </div>
+      </div>
+
+      <!-- Blok 3 -->
+      <div class="section-row" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-block">
+          <h2>Materiały i przeszklenia</h2>
+          <p>Konstrukcja ogrodu powinna być wykonana z trwałych materiałów takich jak <strong>aluminium</strong> lub <strong>wielokomorowe PVC</strong>. Do przeszklenia wykorzystuje się <strong>szkło zespolone</strong>, często hartowane, antyrefleksyjne, przeciwsłoneczne. Alternatywą są <strong>płyty poliwęglanowe</strong>, jednak ograniczają widoczność.</p>
+        </div>
+        <div class="swiper ogrody-swiper-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/produkty/ogrody/12.jpg" alt="Szkło ogrodu"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/13.jpg" alt="Profile PVC"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/14.jpg" alt="Szkło ogrodu"></div>
+            <div class="swiper-slide"><img src="img/produkty/ogrody/15.jpg" alt="Profile PVC"></div>
+          </div>
+          <div class="swiper-pagination ogrody-pagination-3"></div>
+        </div>
+      </div>
+
+<!-- Blok 4: Wentylacja i oszczędność energii -->
+<div class="section-row reverse" data-aos="fade-up" data-aos-delay="300">
+  <div class="text-block">
+    <h2>Wentylacja i oszczędność energii</h2>
+    <p>Dobrze zaprojektowana <strong>wentylacja</strong> pozwala utrzymać komfortową temperaturę w ogrodzie przez cały rok. Można stosować <strong>wywietrzniki</strong>, <strong>nawiewniki</strong>, a także <strong>roślinność</strong> i <strong>materiały akumulujące ciepło</strong> (cegła, kamień, ziemia). Dzięki temu możliwe jest <strong>poprawienie bilansu energetycznego</strong> domu.</p>
+  </div>
+  <div class="image-placeholder">
+    <img src="img/produkty/ogrody/16.jpg" alt="Wentylacja ogrodu zimowego" />
+  </div>
+</div>
+
+<!-- Blok 5: Estetyka i detale -->
+<div class="section-row" data-aos="fade-up" data-aos-delay="350">
+  <div class="text-block">
+    <h2>Estetyka i detale</h2>
+    <p>Nowoczesne ogrody zimowe wyróżniają się eleganckimi detalami: <strong>stylizowane profile dachowe</strong>, <strong>ozdobne ściągi</strong>, <strong>elementy dekoracyjne</strong> na kalenicy czy rynnach, a także <strong>systemy maskujące</strong> połączenia konstrukcji. To wszystko wpływa zarówno na <strong>estetykę</strong>, jak i <strong>trwałość konstrukcji</strong>.</p>
+  </div>
+  <div class="image-placeholder">
+    <img src="img/produkty/ogrody/19.jpg" alt="Estetyczne detale ogrodu zimowego" />
+  </div>
+</div>
+
+
+<!-- Blok 5: Dodatkowy informacyjny z obrazem -->
+<div class="section-row reverse" data-aos="fade-up" data-aos-delay="400">
+  <div class="text-block">
+    <h2>Indywidualne projekty i styl</h2>
+    <p>Każdy ogród zimowy może zostać zaprojektowany zgodnie z oczekiwaniami klienta – od nowoczesnych, minimalistycznych form po klasyczne, dekoracyjne rozwiązania. Dzięki temu z łatwością dopasowuje się go do istniejącej architektury budynku i otoczenia.</p>
+  </div>
+  <div class="image-placeholder">
+    <img src="img/produkty/ogrody/18.jpg" alt="Indywidualny projekt ogrodu zimowego" />
+  </div>
+</div>
+
+<!-- Blok 6: Szczelność i systemy techniczne -->
+<div class="section-row" data-aos="fade-up" data-aos-delay="500">
+  <div class="text-block">
+    <h2>Szczelność, odprowadzanie wody i trwałość</h2>
+    <p>Systemy ogrodów zimowych EMIL zapewniają <strong>doskonałą szczelność</strong> dzięki zastosowaniu <strong>uszczelek EPDM</strong> – m.in. podwójne uszczelnienie przy rynnie, uszczelki szczytowe i przyścienne oraz zakrywające śruby w profilach dachowych.</p>
+    <p><strong>Odprowadzanie wody</strong> odbywa się za pomocą poziomych i pionowych rynien, a ewentualna infiltracja trafia do profili zbierających wodę i następnie do rynny.</p>
+    <p>Konstrukcje cechują się <strong>sztywnością i wytrzymałością</strong>, co gwarantuje trwałość, izolacyjność i odporność przez dziesięciolecia. Można je stosować również do <strong>dużych powierzchni</strong> jak np. baseny.</p>
+    <p>Dachy mogą być wypełniane materiałami o różnych grubościach, np. <strong>szkłem, poliwęglanem lub płytami ISOTHERM</strong>, dostosowanymi do potrzeb klienta.</p>
+  </div>
+  <div class="image-placeholder">
+    <img src="img/produkty/ogrody/20.jpg" alt="Szczelność i systemy techniczne" />
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+
+    new Swiper('.ogrody-swiper-1', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.ogrody-pagination-1', clickable: true }
+    });
+
+    new Swiper('.ogrody-swiper-2', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.ogrody-pagination-2', clickable: true }
+    });
+
+    new Swiper('.ogrody-swiper-3', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.ogrody-pagination-3', clickable: true }
+    });
+    new Swiper('.mySwiperGallery', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true }
+    });
+
+  </script>
+</body>
+</html>

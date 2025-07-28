@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EMIL | Okna</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    main {
+      padding-bottom: 60px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .section-row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .section-row.reverse {
+      flex-direction: row-reverse;
+    }
+    .text-block {
+      flex: 1;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #333;
+    }
+    .text-block h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+     
+    }
+    .swiper {
+      flex: 1;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: contain;
+    }
+    .swiper-pagination {
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      .section-row, .section-row.reverse {
+        flex-direction: column;
+      }
+      .swiper {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 480px) {
+  /* Контейнер на смартфоні - максимально 95% ширини, центрування */
+  .container {
+    max-width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Заголовки трохи менші */
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text-block {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Відступи між блоками менші, щоб не було зайвих пустот */
+  .section-row {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* Всі блоки у колонку (на всяк випадок) */
+  .section-row, 
+  .section-row.reverse {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  /* Слайдери займають 100% ширини контейнера */
+  .swiper {
+    max-width: 100%;
+    width: 100%;
+    box-shadow: none; /* Можна прибрати тінь, щоб було легше */
+    border-radius: 12px;
+  }
+
+  /* Зменшення відступів у слайдах */
+  .swiper-slide img {
+    border-radius: 12px;
+  }
+
+  /* Центруємо текстові блоки */
+  .text-block {
+    width: 100%;
+  }
+
+  /* Центруємо заголовки у текстових блоках */
+  .text-block h2 {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container" data-aos="fade-up">
+      <h1>Okna</h1>
+      <p style="text-align:center; margin-bottom: 40px;">
+        Stolarka jest wysokogatunkowym, kosztownym elementem budowlanym, od którego mamy prawo oczekiwać, że będzie funkcjonować przez dziesięciolecia bez konieczności przeprowadzania większych prac konserwacyjnych i naprawczych.
+      </p>
+    </div>
+
+    <section class="container">
+      <!-- Blok 1 -->
+   <div class="section-row" data-aos="fade-up">
+  <div class="text-block">
+    <h2>Wysokogatunkowa stolarka</h2>
+    <p>
+      Nasz system tworzyw sztucznych odpowiada z pewnością tym oczekiwaniom. Profile z tworzyw sztucznych przechodzą proces produkcyjny, który zakwalifikowany został do <strong>najwyższej europejskiej normy Jakości</strong>.
+    </p>
+    <p>
+      Systemy stolarki z tworzyw sztucznych są <strong>wysokogatunkowymi elementami budowlanymi</strong>, które wymagają prawidłowej informacji co do wielu swoich zalet i wariantów wykonania. Nasza Firma chętnie podejmie się tego zadania i udzieli Państwu jako inwestorom <strong>wyczerpujących informacji</strong>.
+    </p>
+  </div>
+  <div class="swiper okna-1-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/produkty/okna/1.jpg" alt="Okna wysokogatunkowe 1" /></div>
+      <div class="swiper-slide"><img src="img/produkty/okna/2.jpg" alt="Okna wysokogatunkowe 2" /></div>
+    </div>
+    <div class="swiper-pagination okna-1-pagination"></div>
+  </div>
+</div>
+
+<!-- Blok 2 -->
+<div class="section-row reverse" data-aos="fade-up" data-aos-delay="100">
+  <div class="text-block">
+    <h2>Produkcja i montaż</h2>
+    <p>
+      Po podjęciu przez Państwa decyzji nasza firma odpowiadać będzie za produkcję Państwa stolarki. <strong>Terminowy</strong>, odpowiadający przebiegowi prowadzonych przez Państwa prac budowlanych montaż zagwarantuje Państwu długoletnie zadowolenie dzięki <strong>profesjonalnemu Serwisowi</strong>.
+    </p>
+  </div>
+  <div class="swiper okna-2-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="crt/System-76-AD-Standard_nussbaum.png" alt="System-76-AD-Standard_nussbaum" /></div>
+      <div class="swiper-slide"><img src="img/produkty/okna/3.jpg" alt="Montaż okien 1" /></div>
+    </div>
+    <div class="swiper-pagination okna-2-pagination"></div>
+  </div>
+</div>
+
+<!-- Blok 3 -->
+<div class="section-row" data-aos="fade-up" data-aos-delay="200">
+  <div class="text-block">
+    <h2>Okna KBE</h2>
+    <p>
+      Oryginalny niemiecki profil PVC. System greenline - <strong>bezołowiowy</strong>. <strong>System 5-komorowy</strong>.
+      <strong>Wysoka izolacja termiczna i akustyczna</strong> dzięki wielokomorowej konstrukcji profili. 
+      Duże komory pozwalające na dobór wzmocnień odpowiednio do wymagań statycznych.
+    </p>
+    <p>
+      <strong>13mm oś okuciowa</strong> zapewniająca optymalne zabezpieczenie przed włamaniem. Zgrzewalne, niewidoczne uszczelki, które nie zmniejszają światła szyby. Wyprofilowany, gładki wrąb ułatwiający utrzymanie czystości i odprowadzanie ewentualnie nagromadzonej wody. Możliwość stosowania pakietów szybowych o grubości od 4 do 52 mm.
+    </p>
+    <p>
+      Szprosy: powierzchniowe (konstrukcyjne z PCV o dowolnej szerokości i kolorze), wewnątrz szybowe (aluminiowe dowolnej szerokości, lakierowane proszkowo w dowolnym kolorze wg palety RAL). Szare uszczelki w oknach białych.
+    </p>
+    <p>
+      Wykonujemy okna o <strong>dowolnych wymiarach</strong>, podziale, ze szprosami, szklonych dowolnym zestawem szybowym (szkło refleksyjne, antywłamaniowe, bezpieczne i inne).
+    </p>
+  </div>
+  <div class="swiper okna-3-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="crt/System-76-AD-Falzverklebung-ohne-FLG-Stahl-weiss_2eb.png" alt="System-76-AD-Falzverklebung-ohne-FLG-Stahl-weiss_2eb" /></div>
+      <div class="swiper-slide"><img src="crt/System-76-AD-Standard_weiss.png" alt="System-76-AD-Standard_weiss.png" /></div>
+      <div class="swiper-slide"><img src="crt/System-88-MD-pCT-Full-Cover-Silver.jpg" alt="System-88-MD-pCT-Full-Cover-Silver" /></div>
+      <div class="swiper-slide"><img src="crt/System-88-MD-Standard_weiss.png" alt="System-88-MD-Standard_weiss" /></div>
+    </div>
+    <div class="swiper-pagination okna-3-pagination"></div>
+  </div>
+</div>
+
+<!-- Новий текстовий блок 1 -->
+<div class="section-row reverse" data-aos="fade-up" data-aos-delay="300">
+  <div class="text-block">
+    <h2>PODWYŻSZONA SZCZELNOŚĆ</h2>
+    <p>
+      System z <strong>uszczelką przylgową</strong> wyróżnia się zastosowaniem <strong>wewnętrznej i zewnętrznej uszczelki</strong> o zwiększonej powierzchni przylegania. Dzięki zastosowaniu nowoczesnych systemów przewietrzania, okna są wentylowane tam, gdzie powinny (aprobata techniczna <strong>AT-15-6179/2006</strong>). <strong>Elastyczne uszczelki</strong> o <strong>długotrwałej żywotności</strong> gwarantują perfekcyjną ochronę przestrzeni między skrzydłem a ościeżnicą okna.
+    </p>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/img/pp.jpg" alt="Szczelność okien" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nowy blok 2 -->
+<div class="section-row" data-aos="fade-up" data-aos-delay="500">
+  <div class="text-block">
+    <h2>PODWYŻSZONA SZTYWNOŚĆ</h2>
+    <p>
+      System <strong>5-komorowy</strong> posiada wyjątkowy w swoim rodzaju kształt komór, wzorowany na najlepszych rozwiązaniach natury, przypominający <strong>plastry miodu</strong>. To rozwiązanie zapewnia <strong>wysoką stabilność okna</strong> i zapobiega odkształceniom profili.
+    </p>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="crt/System-88-MD-Standard_weiss.png" alt="Sztywność systemu" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nowy blok 3 -->
+<div class="section-row reverse" data-aos="fade-up" data-aos-delay="600">
+  <div class="text-block">
+    <h2>TECHNOLOGIA BEZOŁOWIOWA GREENLINE</h2>
+    <p>
+      Nasze profile okienne są stabilizowane przyjaznym dla środowiska naturalnego <strong>wapniem i cynkiem</strong>, zamiast ołowiu. Dzięki temu dbamy nie tylko o środowisko, ale także o jakość okien przez cały okres ich użytkowania – są one bardziej odporne na wpływy atmosferyczne, dłużej utrzymują połysk oraz są łatwiejsze do utylizacji. <strong>To opłacalna ochrona środowiska.</strong>
+    </p>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/oO.jpg" alt="Greenline eco system" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nowy blok 4 -->
+<div class="section-row" data-aos="fade-up" data-aos-delay="500">
+  <div class="text-block">
+    <h2>KOLOR</h2>
+    <p>
+      Kolor jest zawsze ważnym elementem konstrukcji, również przy renowacji i modernizacji starych domów. Dzięki barwom można harmonijnie wkomponować budynek w otoczenie lub wyróżnić go na tle innych. Kolory podkreślają cechy architektoniczne, eksponują szczegóły lub całe powierzchnie. Ponieważ fantazja nie ma granic, nasze okna występują zarówno w podstawowym kolorze <strong>białym</strong>, jak i w łudząco podobnych, specjalnie wytłaczanych 1- lub 2-stronnie <strong>okleinach drewnopodobnych</strong>. Do wyboru są imitacje struktur drewna takie jak: <strong>złoty dąb, orzech, mahoń</strong>.
+    </p>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/drew.jpg" alt="Kolory okien" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Більше блоків можна додати за необхідністю -->
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    new Swiper('.okna-1-swiper', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.okna-1-pagination', clickable: true }
+    });
+
+    new Swiper('.okna-2-swiper', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.okna-2-pagination', clickable: true }
+    });
+
+    new Swiper('.okna-3-swiper', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.okna-3-pagination', clickable: true }
+    });
+  </script>
+</body>
+</html>
